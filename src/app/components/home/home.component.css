@@ -1,6 +1,5 @@
 .container {
-  background: url("../../../assets/IMG20220302074435.jpg") no-repeat center
-    center fixed;
+  background: url("../../../assets/home-img.jpg") no-repeat center center fixed;
   background-size: cover;
   min-width: 100%;
   height: 100%;
