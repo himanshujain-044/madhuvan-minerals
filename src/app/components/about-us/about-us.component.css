@@ -1,0 +1,26 @@
+.about-us,
+.vision,
+.owner-message,
+.customer-reviews {
+  padding: 2rem 4rem;
+  border: 1px solid black;
+}
+
+.vision-cont,
+.ownr-msg-cont {
+  display: flex;
+  justify-content: space-around;
+}
+.owner-message h4 {
+  text-align: center;
+}
+.customer-reviews {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+}
+.cus-review-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

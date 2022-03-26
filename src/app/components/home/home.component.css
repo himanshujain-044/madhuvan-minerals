@@ -1,0 +1,29 @@
+.container {
+  background: url("../../../assets/IMG20220302074435.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* background-size: 100% 100%; */
+}
+h2,
+h3,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px 0px 0px 20px;
+  font-size: 4vw;
+}
+h2,
+h3,
+p {
+}
+p {
+  font-weight: lighter;
+  font-size: large;
+}
+.brand-name {
+  position: relative;
+  margin-top: 10rem;
+  margin-bottom: 25rem;
+}
