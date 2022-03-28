@@ -1,23 +1,27 @@
 <div class="container">
-  <div class="left-side">
-    <img src="../../../assets/LogoMMSmallPNG.png" alt="logo" class="logo" />
-  </div>
-  <div class="right-side">
-    <span class="right-link" routerLink="/home"
-      ><span class="material-icons"> home </span>Home</span
-    >
-    <span class="right-link" routerLink="/products">
-      <span class="material-icons"> shopping_bag </span>Products</span
-    >
-    <span class="right-link" routerLink="/gallery">
-      <span class="material-icons"> image </span>Gallery</span
-    >
-    <span class="right-link" routerLink="/about-us">
-      <span class="material-icons"> people </span>About Us</span
-    >
-    <span class="right-link">
-      <span class="material-icons"> call </span>Contact Us</span
-    >
-  </div>
-  <div class="mobile-menu">Mobile</div>
+    <div class="left-side">
+        <img src="../../../assets/LogoMMSmallPNG.png" alt="logo" class="logo" />
+    </div>
+    <div class="right-side">
+        <span class="right-link" routerLink="/home"
+            ><span class="material-icons"> home </span>Home</span
+        >
+        <span class="right-link" routerLink="/products">
+            <span class="material-icons"> shopping_bag </span>Products</span
+        >
+        <span class="right-link" routerLink="/gallery">
+            <span class="material-icons"> image </span>Gallery</span
+        >
+        <span class="right-link" routerLink="/about-us">
+            <span class="material-icons"> people </span>About Us</span
+        >
+        <span class="right-link">
+            <span class="material-icons"> call </span>Contact Us</span
+        >
+    </div>
+    <div class="mobile-menu">
+        <span class="right-link" (click)="onToggleSidnav()">
+            <span class="material-icons"> menu </span>Menu</span
+        >
+    </div>
 </div>

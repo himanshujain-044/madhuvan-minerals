@@ -1,28 +1,51 @@
 .container {
-  background: url("../../../assets/home-img.jpg") no-repeat center center fixed;
-  background-size: cover;
-  min-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  /* background-size: 100% 100%; */
+    background: url('../../../assets/home-img.jpg') no-repeat center center
+        fixed;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-size: 100% 100%; */
 }
 h2,
 h3,
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 0px 0px 0px 20px;
-  font-size: 4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px 0px 10px 20px;
+    font-size: 3vw;
 }
 h2,
 h3,
 p {
 }
 p {
-  font-weight: lighter;
-  font-size: large;
+    font-weight: lighter;
+    font-size: large;
 }
 .brand-name {
-  position: relative;
-  margin-top: 10rem;
-  margin-bottom: 25rem;
+    position: relative;
+    margin-top: 9rem;
+    margin-bottom: 25rem;
+}
+
+@media only screen and (max-width: 800px) {
+    h2,
+    h3,
+    p {
+        font-size: 5vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .brand-name {
+        /* top: -5rem; */
+    }
+    h2,
+    h3 {
+        font-size: 5vw;
+        margin: 0px 0px 0px 20px;
+    }
+    p {
+        font-size: 3vw;
+        margin: 0px 0px 0px 20px;
+    }
 }

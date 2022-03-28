@@ -1,4 +1,46 @@
-<app-header></app-header>
-
-<div class="main-container"><router-outlet></router-outlet></div>
-<app-footer></app-footer>
+<app-header (open)="sidenav.open()"></app-header>
+<mat-sidenav-container
+    class="example-container"
+    (backdropClick)="sidenav.close()"
+>
+    <mat-sidenav
+        #sidenav
+        position="end"
+        (keydown.escape)="close('escape')"
+        disableClose
+    >
+        <span class="right-link" routerLink="/home" (click)="sidenav.close()"
+            ><span class="material-icons"> home </span>Home</span
+        >
+        <div class="links">
+            <span
+                class="right-link"
+                routerLink="/products"
+                (click)="sidenav.close()"
+            >
+                <span class="material-icons"> shopping_bag </span>Products</span
+            >
+            <span
+                class="right-link"
+                routerLink="/gallery"
+                (click)="sidenav.close()"
+            >
+                <span class="material-icons"> image </span>Gallery</span
+            >
+            <span
+                class="right-link"
+                routerLink="/about-us"
+                (click)="sidenav.close()"
+            >
+                <span class="material-icons"> people </span>About Us</span
+            >
+            <span class="right-link">
+                <span class="material-icons"> call </span>Contact Us</span
+            >
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="main-container"><router-outlet></router-outlet></div>
+        <app-footer></app-footer
+    ></mat-sidenav-content>
+</mat-sidenav-container>
