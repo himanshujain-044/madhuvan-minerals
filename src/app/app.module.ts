@@ -11,6 +11,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './matrial.module';
+// import { OwlModule } from 'ngx-owl-carousel';
+import { NgImageSliderModule } from 'ng-image-slider';
+// import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
     declarations: [
@@ -27,6 +30,9 @@ import { MaterialModule } from './matrial.module';
         MaterialModule,
         AppRoutingModule,
         BrowserAnimationsModule,
+        // CarouselModule,
+        NgImageSliderModule
+        // OwlModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

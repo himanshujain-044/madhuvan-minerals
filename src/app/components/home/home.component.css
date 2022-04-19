@@ -1,51 +1,105 @@
+.container,
+.content {
+    padding: 0rem 3rem;
+}
 .container {
-    background: url('../../../assets/home-img.jpg') no-repeat center center
+    /* background: url('../../../assets/home-img.jpg') no-repeat center center
         fixed;
     background-size: cover;
     min-width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; */
     /* background-size: 100% 100%; */
+    margin-top: 5rem;
+    display: flex;
+
+    justify-content: space-between;
+}
+.query-form {
+    height: 300px;
+    width: 200px;
+    background-color: aliceblue;
+}
+.our-clients,
+.products-use {
+    margin-top: 1rem;
+    padding: 2rem;
+    background-color: lightgray;
+    border-radius: 4px;
+    height: 500px;
+}
+.img-slider {
+    /* width: 640px; */
+    /* min-height: 900px !important; */
+    text-align: center;
+    /* display: flex; */
+
+    /* align-items: center; */
+    margin-top: 50px;
+    /* margin-left: 40%; */
+    /* padding-left: 400px; */
 }
 h2,
 h3,
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0px 0px 10px 20px;
+    /* margin: 0px 0px 10px 20px; */
     font-size: 3vw;
 }
-h2,
-h3,
-p {
-}
-p {
+\ p {
     font-weight: lighter;
     font-size: large;
 }
 .brand-name {
-    position: relative;
-    margin-top: 9rem;
-    margin-bottom: 25rem;
+    /* position: relative; */
+    /* margin-right: 40rem; */
+    /* font-weight: bold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* align-items: center; */
+    /* margin-top: 9rem; */
+    /* margin-bottom: 25rem; */
 }
 
 @media only screen and (max-width: 800px) {
     h2,
-    h3,
+    h3 {
+        font-size: 4vw;
+    }
     p {
-        font-size: 5vw;
+        font-size: 2vw;
+    }
+    .container,
+    .content {
+        padding: 0rem 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        /* align-items: left; */
+        /* margin-left: 3rem; */
     }
 }
 @media only screen and (max-width: 400px) {
-    .brand-name {
-        /* top: -5rem; */
+    .container,
+    .content {
+        padding: 0rem 0.5rem;
     }
+    .container {
+        flex-direction: column;
+        /* align-items: left; */
+        /* margin-left: 1rem; */
+    }
+
     h2,
     h3 {
         font-size: 5vw;
-        margin: 0px 0px 0px 20px;
+        /* margin: 0px 0px 0px 20px; */
     }
     p {
         font-size: 3vw;
-        margin: 0px 0px 0px 20px;
+        /* margin: 0px 0px 0px 20px; */
     }
 }

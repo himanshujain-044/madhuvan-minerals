@@ -1,22 +1,50 @@
-<div class="container">
-  <!-- <img
+<!-- <div class="container"> -->
+<!-- <img
     src="../../../assets/IMG20220302074435.jpg"
     alt="home-image"
     class="home-image"
   /> -->
-  <!-- <div class="content">
+<!-- <div class="content">
     <h1>Hello</h1>
   </div> -->
-  <div class="brand-name">
-    <h2>Madhuvan Minerals</h2>
-    <h3>& Industries</h3>
-    <p>Pyrophyllite, Diaspore, Rock phosphet, Dolomite and Granite</p>
-  </div>
-</div>
+<div class="container">
+    <div class="brand-name">
+        <h2>Madhuvan Minerals</h2>
+        <h3>& Industries</h3>
+        <p>Pyrophyllite, Diaspore, Rock phosphet, Dolomite and Granite</p>
+    </div>
+    <div class="query-form">
+        <form>
+            <label for="">Your Name</label>
+            <input type="text" />
 
-<h3>
-  hrr
-</h3>
-<!-- <div id="bg">
-  <img src="../../../assets/IMG20220302074435.jpg" alt="" />
-</div> -->
+            <label for="">Email:</label>
+            <input type="text" />
+
+            <label for="">Contact No</label>
+            <input type="text" />
+
+            <button>Send</button>
+        </form>
+    </div>
+</div>
+<div class="content">
+    <div class="our-clients">
+        <h3>Our Clients</h3>
+        <div class="img-slider">
+            <ng-image-slider
+                #nav
+                [images]="imageObject"
+                [infinite]="true"
+                [autoSlide]="1"
+                [imageSize]="imgHeightWidth"
+                slideImage="3"
+            ></ng-image-slider>
+        </div>
+        <h2>JI</h2>
+    </div>
+    <div class="products-use">
+        <h3>Products Use</h3>
+    </div>
+</div>
+<!-- </div> -->
